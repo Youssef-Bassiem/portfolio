@@ -131,8 +131,8 @@
     @apply bg-background text-foreground;
   }
 
-  /* Added scroll offset for anchor links to provide 15px spacing from top */
+  /* Added scroll offset for anchor links to provide 90px spacing from top */
   section[id] {
-    scroll-margin-top: 15px;
+    scroll-margin-top: 90px;
   }
 }
