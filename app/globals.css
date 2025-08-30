@@ -121,6 +121,12 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  /* Added global smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
