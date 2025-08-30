@@ -47,8 +47,8 @@ export default function Portfolio() {
         "React Router",
         "Vercel",
       ],
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://weather-app-lime-pi-47.vercel.app/login",
+      githubUrl: "https://github.com/Youssef-Bassiem/weather-app",
       features: [
         "Efficient data fetching and state management with React Query",
         "Robust form handling and validation using React Hook Form with Zod",
@@ -68,8 +68,8 @@ export default function Portfolio() {
         "Vite",
         "Vercel",
       ],
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://route-task-ashen.vercel.app/",
+      githubUrl: "https://github.com/Youssef-Bassiem/Customer-Transactions",
       features: [
         "Interactive data visualizations using Recharts",
         "Efficient search functionality with regex validation",
@@ -82,8 +82,8 @@ export default function Portfolio() {
       description:
         "Feature-rich task management application with local storage persistence",
       technologies: ["React", "CSS3", "Local Storage", "React Icons"],
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://youssef-bassiem.github.io/todo-list/",
+      githubUrl: "https://github.com/Youssef-Bassiem/todo-list",
       features: [
         "Local storage integration for data persistence",
         "Real-time task updates with completion, editing, and deletion",
@@ -140,31 +140,31 @@ export default function Portfolio() {
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
             <a
               href="#about"
-              className="hover:text-primary transition-colors duration-200"
+              className="hover:text-primary transition-colors duration-300"
             >
               About
             </a>
             <a
               href="#experience"
-              className="hover:text-primary transition-colors duration-200"
+              className="hover:text-primary transition-colors duration-300"
             >
               Experience
             </a>
             <a
               href="#projects"
-              className="hover:text-primary transition-colors duration-200"
+              className="hover:text-primary transition-colors duration-300"
             >
               Projects
             </a>
             <a
               href="#skills"
-              className="hover:text-primary transition-colors duration-200"
+              className="hover:text-primary transition-colors duration-300"
             >
               Skills
             </a>
             <a
               href="#contact"
-              className="hover:text-primary transition-colors duration-200"
+              className="hover:text-primary transition-colors duration-300"
             >
               Contact
             </a>
@@ -205,7 +205,7 @@ export default function Portfolio() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="#" download>
+                <a href="/Youssef_Bassiem_CV.pdf" download>
                   <Download className="h-4 w-4 mr-2" />
                   Download CV
                 </a>
@@ -309,7 +309,7 @@ export default function Portfolio() {
                   <div className="mt-4 pt-4 border-t">
                     <Button variant="outline" size="sm" asChild>
                       <a
-                        href="https://giz-dual.com"
+                        href="https://dualedu.moe.gov.eg/home"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2"
@@ -490,8 +490,11 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="border-t bg-muted/50 py-8 mt-16">
-        <div className="container text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Youssef Bassiem. All rights reserved.</p>
+        <div className="w-full text-center text-sm text-muted-foreground">
+          <p>
+            &copy; {new Date().getFullYear()} Youssef Bassiem. All rights
+            reserved.
+          </p>
         </div>
       </footer>
     </div>
