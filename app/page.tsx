@@ -238,7 +238,7 @@ export default function Portfolio() {
         <ScrollAnimation delay={200}>
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-center">Education</h2>
-            <div className="grid grid-cols-1 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 max-w-3xl mx-auto">
               <Card className="h-full flex flex-col">
                 <CardHeader>
                   <div className="flex items-start gap-3">
@@ -273,43 +273,69 @@ export default function Portfolio() {
         <ScrollAnimation delay={300}>
           <section id="experience" className="space-y-6">
             <h2 className="text-3xl font-bold text-center">Experience</h2>
-            <div className="grid grid-cols-1 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 max-w-3xl mx-auto">
               <Card className="h-full flex flex-col">
                 <CardHeader>
                   <div className="flex items-start gap-3">
                     <Briefcase className="h-6 w-6 text-primary mt-1" />
                     <div>
-                      <CardTitle>Silverkey – Giz-dual Project</CardTitle>
+                      <CardTitle>
+                        Silverkey Technologies – Giz-Dual Project
+                      </CardTitle>
                       <CardDescription>Frontend Developer</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      Contributed to a large-scale educational platform built
-                      with Angular 12 and ASP.NET Core
+                    <li className="flex items-center gap-2">
+                      <span className="text-primary text-2xl">•</span>
+                      Led the migration from Angular 12 to Angular 20,
+                      modernizing the codebase with standalone components,
+                      Angular Signals, and function-based APIs.
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      Identified and addressed major issues in legacy codebase
-                      lacking clean coding practices
+                    <li className="flex items-center gap-2">
+                      <span className="text-primary text-2xl">•</span>
+                      Built a centralized HTTP Error Interceptor, improving API
+                      stability and global error handling.
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      Refactored key components to follow Angular best practices
+                    <li className="flex items-center gap-2">
+                      <span className="text-primary text-2xl">•</span>
+                      Enhanced application security by configuring CSP headers
+                      with nonce-based validation, preventing unauthorized
+                      script execution and protecting user data against XSS
+                      attacks without compromising UI functionality.
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      Investigated and resolved performance bottlenecks in form
-                      handling and API integration
+                    <li className="flex items-center gap-2">
+                      <span className="text-primary text-2xl">•</span>
+                      Integrated the Angular frontend with an ASP.NET Core 10
+                      backend generated through Scalar + OpenAPI, achieving
+                      fully type-safe API clients, auto-generated models, and
+                      consistent request/response typing across the app.
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-primary text-2xl">•</span>
+                      Integrated SonarQube for continuous code analysis,
+                      reducing complexity and eliminating security
+                      vulnerabilities.
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-primary text-2xl">•</span>
+                      Rebuilt major modules using reactive forms,
+                      computed/effect signals, and lifecycle-based logic,
+                      enabling dynamic permissions and state-driven UI.
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-primary text-2xl">•</span>
+                      Delivered a unified, responsive UI using Tailwind CSS,
+                      Angular Material, custom SVG icons, and full RTL (Arabic)
+                      support.
                     </li>
                   </ul>
                   <div className="mt-4 pt-4 border-t">
                     <Button variant="outline" size="sm" asChild>
                       <a
-                        href="https://dualedu.moe.gov.eg/home"
+                        href="https://dualedu.moe.gov.eg/home/admin"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2"
@@ -426,10 +452,22 @@ export default function Portfolio() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-2 text-sm flex-1">
-                  <div>• Web Development Challenger (Udacity)</div>
-                  <div>• UX Design Fundamentals (Mahara-Tech)</div>
-                  <div>• The Ultimate React Course (Udemy)</div>
-                  <div>• ITI Summer Training - Full Stack Development</div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary">•</span>
+                    Web Development Challenger (Udacity)
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary">•</span>
+                    UX Design Fundamentals (Mahara-Tech)
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary">•</span>
+                    The Ultimate React Course (Udemy)
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary">•</span>
+                    ITI Summer Training - Full Stack Development
+                  </div>
                 </CardContent>
               </Card>
             </div>
